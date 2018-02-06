@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+app.factory('Employeeservice',function($http)
+{
+	var employeservice={}
+	employeeservice.getAllEmployees=function()
+	{
+		return
+		
+	}
+	return employservice;
+		}

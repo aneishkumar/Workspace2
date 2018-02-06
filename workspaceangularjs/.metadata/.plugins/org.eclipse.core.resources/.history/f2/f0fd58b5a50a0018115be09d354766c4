@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+app.factory('EmployeeService',function($https){
+	var employeeservice={}
+	return $https.post("http:\\localhost:8085\demo\addemployee")
+}
+return employeeservice
+})

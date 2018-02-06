@@ -1,0 +1,7 @@
+/**
+ * 
+ */
+app.controller('myControl', function($scope) {
+    $scope.firstname = "John";
+    $scope.lastname = "Doe";    
+});
