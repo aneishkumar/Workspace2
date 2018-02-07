@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+var app = angular.module('app2', ['ngRoute']);
+$routeProvider
+app.config(function($routeProvider){
+	.when('/home',{
+		templateurl:'home.html'
+	})
+})

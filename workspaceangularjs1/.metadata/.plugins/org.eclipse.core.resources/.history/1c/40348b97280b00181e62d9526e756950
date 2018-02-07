@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+app.controller('EmployeeController',function($scope,EmployeeService)
+		{
+	$scope.addemployee=function(employee)
+	{
+	console.log(employee)
+	EmployeSeervice.addemployee(employee).then(function(response)
+			{
+		console.log(response.data)
+		console.log(response.status)
+		alert("Sucessfull")
+			},function(response)
+			{
+				console.log(response.data)
+				alert("Unsucessfull")
+			})
+	}
+		})
+	
+		
+			
+		

@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+var app = angular.module('app2', ['ngRoute']);
+
+app.config(function($routeProvider){
+	$routeProvider
+	.when('/home',{
+		templateurl:'home.html'
+	})
+	.when('/aboutus',{
+		templateurl:'aboutus.html'
+	})
+	.when('/contactus',{
+		templateurl:'contactus.html'
+	})
+})

@@ -1,0 +1,20 @@
+package com.niit.dao;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Repository;
+
+import com.niit.model.Employee;
+@Repository
+@Transactional
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body >
+<div ng-app>
+{{4+5}}<br>
+Name: <input ng-model="name">
+{{name}}<br>
+</div>
+<div ng-app>
+Quantity: <input type="number" ng-model="quantity"><br>
+Costs:    <input type="number" ng-model="price"><br>
+
+Total in dollar: {{ quantity * price }}<br>
+</div>
+<div ng-app="app" ng-controller="myControl">
+{{firstname}}
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src=app.js></script>
+<script type="text/javascript" src=myControl.js></script>
+<script>
+var app=angular.module("app",[])
+app.controller('myControl', function($scope) {
+    $scope.firstname = "Aneish";
+    $scope.lastname = "Kumar"; 
+    $scope.fullName = function() {
+        return $scope.firstName + " " + $scope.lastName;
+    };
+});
+
+</script>
+</html>
