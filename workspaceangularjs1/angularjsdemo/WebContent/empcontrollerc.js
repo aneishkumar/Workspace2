@@ -25,5 +25,3 @@ app.controller('EmployeeController',['$scope',function($scope,EmployeeService)
 		}])
 	
 		
-			
-		
